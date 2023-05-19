@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_signup_nav_graph"
+    app:startDestination="@layout/fragment_login">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.cloudkitchen_admin.FrontEnd.LoginSignUp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+
+        <action
+            android:id="@+id/action_loginFragment_to_signup_fragment"
+            app:destination="@id/signup_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signup_fragment"
+        android:name="com.example.cloudkitchen_admin.FrontEnd.LoginSignUp.SignUpFragment"
+        android:label="fragment_signUp"
+        tools:layout="@layout/fragment_sign_up" >
+
+        <action
+            android:id="@+id/action_signup_fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            />
+    </fragment>
+
+
+</navigation>

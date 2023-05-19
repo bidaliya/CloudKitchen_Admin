@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/my_gradient"
+    android:fitsSystemWindows="true"
+    tools:context=".FrontEnd.MainActivity">
+
+    <ImageView
+        android:id="@+id/ck_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:layout_marginTop="180sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/curved_background"
+        android:text="Login"
+        android:textColor="#474747"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ck_logo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUp_btn"
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/curved_background_transparent"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_btn"/>
+
+    <TextView
+        android:id="@+id/continue_as_guest_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUp_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="Continue as guest"
+        android:textSize="17sp"
+        />
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="420dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        >-->
+
+<!--&lt;!&ndash;        android:backgroundTint= "#d998fd"&ndash;&gt;-->
+
+<!--        <com.denzcoskun.imageslider.ImageSlider-->
+<!--            android:id="@+id/image_slider"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:iss_auto_cycle="true"-->
+<!--            app:iss_period="5000"-->
+<!--            app:iss_delay="5000"-->
+<!--            app:iss_text_align="CENTER"-->
+<!--            app:iss_title_background="@color/Transparent"-->
+<!--            app:iss_no_dots="true"-->
+
+<!--            />-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
